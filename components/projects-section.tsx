@@ -77,7 +77,7 @@ export function ProjectsSection() {
 
   return (
     <section ref={sectionRef} id="projects" className="py-20 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4">
+      <div className="w-full max-w-[1400px] mx-auto px-4 lg:px-8 xl:px-12">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="heading-section text-foreground">Featured Projects & Case Studies</h2>
           <p className="text-description-primary">
@@ -89,11 +89,11 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <Card
               key={project.title}
-              className={`animate-on-scroll hover:shadow-xl transition-all duration-300 border-green-200 dark:border-green-800 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+              className={`animate-on-scroll hover:shadow-xl transition-all duration-300 border-green-200 dark:border-green-800 w-full ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
             >
-              <div className="lg:flex lg:items-center">
-                <div className="lg:w-1/3 p-6">
-                  <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
+              <div className="lg:flex lg:items-stretch lg:min-h-[450px] w-full">
+                <div className="lg:w-5/12 xl:w-2/5 p-6 lg:p-8 flex items-center">
+                  <div className="relative h-64 lg:h-full w-full rounded-lg overflow-hidden">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
@@ -102,24 +102,24 @@ export function ProjectsSection() {
                     />
                   </div>
                 </div>
-                <div className="lg:w-2/3 p-6">
-                  <CardHeader className="p-0 mb-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <CardTitle className="heading-subsection text-foreground">{project.title}</CardTitle>
-                      <Badge variant="outline" className="text-green-600 border-green-600">
+                <div className="lg:w-7/12 xl:w-3/5 p-6 lg:p-8 xl:p-12 flex flex-col justify-center">
+                  <CardHeader className="p-0 mb-6">
+                    <div className="flex items-start justify-between mb-4 flex-wrap gap-2">
+                      <CardTitle className="heading-subsection text-foreground flex-1 min-w-0">{project.title}</CardTitle>
+                      <Badge variant="outline" className="text-green-600 border-green-600 flex-shrink-0">
                         {project.period}
                       </Badge>
                     </div>
-                    <p className="text-description-secondary">{project.description}</p>
+                    <p className="text-description-secondary text-lg leading-relaxed">{project.description}</p>
                   </CardHeader>
 
                   <CardContent className="p-0">
                     {/* Key Metrics */}
-                    <div className="grid grid-cols-3 gap-4 mb-6">
+                    <div className="grid grid-cols-3 gap-4 mb-6 lg:gap-6">
                       {Object.entries(project.metrics).map(([key, value]) => (
-                        <div key={key} className="text-center p-3 bg-green-50 dark:bg-green-950/30 rounded-lg">
-                          <div className="text-2xl font-bold text-green-600 dark:text-green-400">{value}</div>
-                          <div className="text-sm text-gray-600 dark:text-gray-400 capitalize">
+                        <div key={key} className="text-center p-3 lg:p-4 bg-green-50 dark:bg-green-950/30 rounded-lg">
+                          <div className="text-2xl lg:text-3xl font-bold text-green-600 dark:text-green-400">{value}</div>
+                          <div className="text-sm lg:text-base text-gray-600 dark:text-gray-400 capitalize">
                             {key.replace(/([A-Z])/g, " $1").trim()}
                           </div>
                         </div>
@@ -128,11 +128,11 @@ export function ProjectsSection() {
 
                     {/* Achievements */}
                     <div className="mb-6">
-                      <h4 className="heading-card text-foreground mb-3">Key Achievements:</h4>
-                      <ul className="space-y-2">
+                      <h4 className="heading-card text-foreground mb-3 lg:mb-4">Key Achievements:</h4>
+                      <ul className="space-y-2 lg:space-y-3 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:gap-y-2">
                         {project.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start gap-2 text-body">
-                            <TrendingUp className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                          <li key={i} className="flex items-start gap-2 text-body lg:text-lg">
+                            <TrendingUp className="h-4 w-4 lg:h-5 lg:w-5 text-green-500 mt-1 flex-shrink-0" />
                             {achievement}
                           </li>
                         ))}

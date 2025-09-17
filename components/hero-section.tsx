@@ -14,7 +14,7 @@ export function HeroSection() {
         <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-secondary/10 rounded-full blur-lg"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
+  <div className={`container mx-auto px-4 py-20 relative z-10 `}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8 fade-in-left">

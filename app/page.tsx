@@ -39,9 +39,9 @@ export default function Home() {
         <ProjectsSection />
       </section>
 
-      <section id="testimonials">
+      {/* <section id="testimonials">
         <TestimonialsSection />
-      </section>
+      </section> */}
 
       <section id="contact">
         <ContactSection />

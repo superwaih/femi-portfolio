@@ -25,7 +25,7 @@ export function ContactSection() {
           <div className="space-y-8 fade-in-left">
             <div className="flex justify-center lg:justify-start">
               <div className="relative w-64 h-64">
-                <Image src="/images/character-4.png" alt="Contact illustration" fill className="object-contain" />
+                <Image src="/images/hero-gif.gif" alt="Contact illustration" fill className="object-contain rounded-full" />
               </div>
             </div>
 

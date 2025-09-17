@@ -31,9 +31,9 @@ export function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Character Images Grid */}
-          <div className="grid grid-cols-2 gap-6 fade-in-left">
+          <div className="grid grid-cols-1 gap-6 fade-in-left">
             <div className="space-y-6">
-              <Card className="overflow-hidden scale-in">
+              {/* <Card className="overflow-hidden scale-in">
                 <CardContent className="p-0">
                   <Image
                     src="/images/character-1.png"
@@ -43,8 +43,8 @@ export function AboutSection() {
                     className="w-full h-48 object-contain bg-gradient-to-br from-primary/5 to-accent/5"
                   />
                 </CardContent>
-              </Card>
-              <Card className="overflow-hidden scale-in">
+              </Card> */}
+              {/* <Card className="overflow-hidden scale-in">
                 <CardContent className="p-0">
                   <Image
                     src="/images/character-4.png"
@@ -54,20 +54,16 @@ export function AboutSection() {
                     className="w-full h-48 object-contain bg-gradient-to-br from-accent/5 to-secondary/5"
                   />
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
-            <div className="space-y-6 pt-12">
-              <Card className="overflow-hidden scale-in">
-                <CardContent className="p-0">
-                  <Image
+            <div className="space-y-6 ">
+           <Image
                     src="/images/character-3.png"
                     alt="Character illustration 3"
-                    width={200}
-                    height={200}
-                    className="w-full h-48 object-contain bg-gradient-to-br from-secondary/5 to-primary/5"
+                    width={500}
+                    height={500}
+                    className="w-full max-h-[500px] object-contain bg-gradient-to-br from-secondary/5 to-primary/5"
                   />
-                </CardContent>
-              </Card>
             </div>
           </div>
 

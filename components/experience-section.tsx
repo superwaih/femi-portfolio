@@ -7,7 +7,7 @@ import { CalendarDays, MapPin } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
-      title: "Lead Ambassador",
+      title: "Ambassador",
       company: "Solana Naming Service (SNS)",
       period: "2025 - Present",
       location: "Remote",

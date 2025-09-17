@@ -34,7 +34,7 @@ const projects = [
     ],
     technologies: ["Ambassador Relations", "Educational Content", "Event Management", "Community Building"],
     metrics: { awareness: "200%", materials: "25+", events: "10+" },
-    image: "/images/character-3.png",
+    image: "/images/character-2.jpeg",
     period: "2024 - Present",
   },
   {
@@ -49,7 +49,7 @@ const projects = [
     ],
     technologies: ["Polkadot Ecosystem", "Network Growth", "Educational Strategy", "Relationship Building"],
     metrics: { participation: "150%", relationships: "Strong", environment: "Positive" },
-    image: "/images/character-4.png",
+    image: "/images/character-2.jpeg",
     period: "2024 - 2025",
   },
 ]

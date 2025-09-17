@@ -27,7 +27,7 @@ export function HeroSection() {
                 <span className="text-foreground">Patrick</span>
               </h1>
               <div className="text-xl lg:text-2xl text-muted-foreground font-medium leading-snug">
-                Community Growth Strategist & Web3 Leader
+               Community Growth Strategist & Community Manager
               </div>
             </div>
 
@@ -66,10 +66,10 @@ export function HeroSection() {
             <FloatingElement className="relative">
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <Image
-                  src="/images/character-2.jpeg"
+                  src="/images/hero-gif.gif"
                   alt="Oluwafemi Patrick - Community Growth Strategist"
                   fill
-                  className="object-contain"
+                  className="object-contain rounded-full"
                   priority
                 />
                 {/* Decorative ring */}

@@ -56,12 +56,12 @@ export default function Home() {
                 Community Growth Strategist & Web3 Leader building the future of decentralized communities.
               </p>
               <div className="flex space-x-4">
-                <a
+                {/* <a
                   href="https://linkedin.com/in/oluwafemi-patrick-omosuyi-396381210"
                   className="text-green-400 hover:text-green-300 transition-colors"
                 >
                   LinkedIn
-                </a>
+                </a> */}
                 <a
                   href="mailto:omosuyioluwafemi1@gmail.com"
                   className="text-green-400 hover:text-green-300 transition-colors"
@@ -82,8 +82,46 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Current Roles</h4>
               <ul className="text-gray-300 space-y-2">
-                <li>Lead Ambassador - Solana Naming Service</li>
-                <li>Ambassador - Ampleforth</li>
+                <li>
+                  <a
+                    href="https://x.com/osmi_ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors"
+                  >
+                    Community Manager - Osmi.ai
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/ampleforthorg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors"
+                  >
+                    Ambassador - Ampleforth
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/sns"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors"
+                  >
+                    Ambassador - Solana Naming Service
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/levelusd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors"
+                  >
+                    Ambassador - Level Money
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

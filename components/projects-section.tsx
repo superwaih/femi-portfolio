@@ -19,7 +19,7 @@ const projects = [
     ],
     technologies: ["Community Management", "Content Strategy", "Social Media", "Discord"],
     metrics: { engagement: "300%", members: "10K+", content: "50+" },
-    image: "/images/character-2.jpeg",
+    image: "/images/sns.jpg",
     period: "2025 - Present",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     ],
     technologies: ["Ambassador Relations", "Educational Content", "Event Management", "Community Building"],
     metrics: { awareness: "200%", materials: "25+", events: "10+" },
-    image: "/images/character-2.jpeg",
+    image: "/images/ample.jpg",
     period: "2024 - Present",
   },
   {
@@ -49,7 +49,7 @@ const projects = [
     ],
     technologies: ["Polkadot Ecosystem", "Network Growth", "Educational Strategy", "Relationship Building"],
     metrics: { participation: "150%", relationships: "Strong", environment: "Positive" },
-    image: "/images/character-2.jpeg",
+    image: "/images/darw.jpg",
     period: "2024 - 2025",
   },
 ]
@@ -93,7 +93,7 @@ export function ProjectsSection() {
             >
               <div className="lg:flex lg:items-stretch lg:min-h-[450px] w-full">
                 <div className="lg:w-5/12 xl:w-2/5 p-6 lg:p-8 flex items-center">
-                  <div className="relative h-64 lg:h-full w-full rounded-lg overflow-hidden">
+                <div className="relative h-64 lg:h-[350px] w-full rounded-lg overflow-hidden">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}

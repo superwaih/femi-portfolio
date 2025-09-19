@@ -22,9 +22,9 @@ export function HeroSection() {
               <h1 className="heading-hero">
                 <span className="text-foreground">Hi, I'm</span>
                 <br />
-                <span className="text-primary">Oluwafemi</span>
+                <span className="text-primary">FeMMie</span>
                 <br />
-                <span className="text-foreground">Patrick</span>
+               
               </h1>
               <div className="text-xl lg:text-2xl text-muted-foreground font-medium leading-snug">
                Community Growth Strategist & Community Manager

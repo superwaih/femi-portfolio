@@ -6,10 +6,10 @@ import { useEffect, useRef } from "react"
 
 const coreSkills = [
   { name: "Community Engagement", icon: "👥" },
-  { name: "Social Media Management", icon: "📱" },
+  // { name: "Social Media Management", icon: "📱" },
   { name: "Content Creation & Strategy", icon: "✍️" },
   { name: "Blockchain & Cryptocurrency", icon: "⛓️" },
-  { name: "Event Planning & Management", icon: "🎯" },
+  // { name: "Event Planning & Management", icon: "🎯" },
   { name: "Public Speaking", icon: "🎤" },
   { name: "Project Management", icon: "📊" },
   { name: "Analytical Thinking", icon: "🧠" },

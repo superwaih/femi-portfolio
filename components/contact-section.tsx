@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, Linkedin, MessageCircle, Twitter, Globe } from "lucide-react"
+import { Mail, MessageSquare, Twitter, Globe } from "lucide-react"
 import Image from "next/image"
 
 export function ContactSection() {
@@ -29,7 +29,7 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="space-y-6 gap-4 grid-cols-2 grid">
+            <div className="space-y-6 gap-4 grid-cols-1 md:grid-cols-2 grid">
               <Card className="scale-in">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4">
@@ -54,8 +54,8 @@ export function ContactSection() {
                     </div>
                     <div>
                       <div className="heading-card">Twitter</div>
-                      <a href="https://twitter.com/femmie" target="_blank" rel="noopener noreferrer" aria-label="Open Twitter profile @femmie" className="text-body text-primary hover:underline">
-                        @femmie
+                      <a href="https://twitter.com/0xfemmie" target="_blank" rel="noopener noreferrer" aria-label="Open Twitter profile @femmie" className="text-body text-primary hover:underline">
+                        @0xfemmie
                       </a>
                     </div>
                   </div>
@@ -72,6 +72,22 @@ export function ContactSection() {
                       <div className="heading-card">Farcaster</div>
                       <a href="https://warpcast.com/femmie" target="_blank" rel="noopener noreferrer" aria-label="Open Farcaster profile femmie" className="text-small text-primary hover:underline">
                         femmie
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="scale-in">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <MessageSquare className="w-6 h-6 text-primary" aria-hidden />
+                    </div>
+                    <div>
+                      <div className="heading-card">Telegram</div>
+                      <a href="https://t.me/FeMMie6994" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram profile @FeMMie6994" className="text-body text-primary hover:underline">
+                        @FeMMie6994
                       </a>
                     </div>
                   </div>
